@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tech Portfolio - Arjuna Sharma </title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Your existing CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+>
+
+    <!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+    (function () {
+        emailjs.init("kSEP5xm65jqCken0m");
+    })();
+</script>
+
+    <style>
+        /* =========================================
+           PROJECT IMAGE STYLING
+        ========================================= */
+
+        .project-image {
+            position: relative;
+            width: 100%;
+            height: 230px;
+            overflow: hidden;
+            border-radius: 12px 12px 0 0;
+            background: #111;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.08);
+        }
+
+        /* Project overlay */
+
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-link {
+            width: 45px;
+            height: 45px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 50%;
+
+            text-decoration: none;
+
+            background: white;
+            color: #111;
+
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Image fallback */
+
+        .project-image img {
+            background: #161616;
+        }
+
+        /* Mobile project images */
+
+        @media (max-width: 768px) {
+            .project-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="tech-particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="tech-orb orb-one"></div>
+<div class="tech-orb orb-two"></div>
+
+<div class="tech-lines"></div>
+
+    <!-- =========================================
+         BACKGROUND ANIMATION
+    ========================================= -->
+
+    <div class="tech-background">
+        <div class="particles"></div>
+        <div class="grid-overlay"></div>
+        <div class="grid-bubble"></div>
+        <div class="grid-dot"></div>
+        <div class="grid-line"></div>
+        <div class="grid-circle"></div>
+    </div>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <div class="logo">
+            <i class="fas fa-code"></i> Arjuna.Sh
+            </div>
+
+            <ul class="nav-menu">
+
+                <li>
+                    <a href="#home" class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="nav-link">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="nav-link">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <h1 class="hero-title">
+                    Hi, I'm Arjuna Sharma
+                </h1>
+                <h1 class="hero-title">
+                    अर्जुन शर्मा
+                </h1>
+
+                <p class="hero-subtitle">
+                    Full-Stack Developer & Tech Enthusiast | Graphic Designer
+                </p>
+
+                <p class="hero-description">
+                    Passionate about creating innovative solutions,
+                    building scalable applications, and graphic design.
+                    Specializing in modern web technologies and visual communication.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        View Projects
+                    </a>
+
+
+                    <a href="assets/Arjuna_Sharma_CV-v2.pdf"
+                       download="Arjuna_Sharma_CV.pdf"
+                       class="btn btn-secondary">
+
+                        <i class="fas fa-download"></i>
+                        Download Resume
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE IMAGE -->
+
+            <div class="hero-image">
+
+                <div class="profile-image">
+
+                    <img src="images/profile.jpeg"
+                         alt="Arjuna Sharma">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="scroll-indicator">
+
+            <div class="scroll-arrow"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         ABOUT SECTION
+    ========================================= -->
+
+    <section id="about" class="about">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>
+                        I'm a passionate full-stack developer and Graphic Designer
+                        with expertise in modern web technologies.
+                        With a strong foundation in computer science and hands-on
+                        experience, I specialize in building scalable applications
+                        and crafting social media assets, banners, logos, and ads.
+                    </p>
+
+
+                    <p>
+                        My journey in tech started with curiosity about how things
+                        work, evolving into a career focused on creating meaningful
+                        digital experiences.
+                        I believe in continuous learning and staying updated with
+                        the latest technologies.
+                    </p>
+
+
+                    <div class="about-stats">
+
+                        <div class="stat-item">
+
+                            <span class="stat-number">
+                                6+
+                            </span>
+
+                            <span class="stat-label">
+                                Projects Completed
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat-item">
+
+                            <span class="stat-number">
+                                Fresher
+                            </span>
+
+                            <span class="stat-label">
+                                Years Experience
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PROJECTS SECTION
+    ========================================= -->
+
+    <section id="projects" class="projects">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Featured Projects
+            </h2>
+
+
+            <div class="projects-grid">
+
+
+                <!-- =================================
+                     PROJECT 1
+                ================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/projects/cms.jpg"
+                             alt="College Management System Project">
+
+                        <div class="project-overlay">
+
+                            <div class="project-links">
+
+                                <a href="#"
+                                   class="project-link"
+                                   title="View Demo">
+
+                                    <i class="fas fa-external-link-alt"></i>
+
+                                </a>
+
+
+                                <a href="https://github.com/Arjuna001-hub/-COLLEGE-MANAGEMENT-SYSTEM-CMS-"
+                                   class="project-link"
+                                   title="View Code"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+
+                                    <i class="fab fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3 class="project-title">
+                            COLLEGE MANAGEMENT SYSTEM (CMS)
+                        </h3>
+
+
+                        <p class="project-description">
+                            A comprehensive college management system that
+                            facilitates student enrollment, course management,
+                            attendance, fees, and administrative tasks.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span class="tech-tag">
+                                HTML
+                            </span>
+
+                            <span class="tech-tag">
+                                CSS
+                            </span>
+
+                            <span class="tech-tag">
+                                JavaScript
+                            </span>
+
+                            <span class="tech-tag">
+                                PHP
+                            </span>
+
+                            <span class="tech-tag">
+                                MySQL
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     PROJECT 2
+                ================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/projects/hms.jpg"
+                             alt="Hospital Management System Project">
+
+                        <div class="project-overlay">
+
+                            <div class="project-links">
+
+                                <a href="#"
+                                   class="project-link"
+                                   title="View Demo">
+
+                                    <i class="fas fa-external-link-alt"></i>
+
+                                </a>
+
+
+                                <a href="#"
+                                   class="project-link"
+                                   title="View Code">
+
+                                    <i class="fab fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3 class="project-title">
+                            HOSPITAL MANAGEMENT SYSTEM (HMS)
+                        </h3>
+
+
+                        <p class="project-description">
+                            A web-based hospital management system that
+                            streamlines patient records, appointment scheduling,
+                            doctor information, and reports.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span class="tech-tag">
+                                HTML
+                            </span>
+
+                            <span class="tech-tag">
+                                CSS
+                            </span>
+
+                            <span class="tech-tag">
+                                JavaScript
+                            </span>
+
+                            <span class="tech-tag">
+                                PHP
+                            </span>
+
+                            <span class="tech-tag">
+                                MySQL
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     PROJECT 3
+                ================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/projects/library.jpg"
+                             alt="Library Management System Project">
+
+                        <div class="project-overlay">
+
+                            <div class="project-links">
+
+                                <a href="#"
+                                   class="project-link"
+                                   title="View Demo">
+
+                                    <i class="fas fa-external-link-alt"></i>
+
+                                </a>
+
+
+                                <a href="https://github.com/Arjuna001-hub/Library-Management-System"
+                                   class="project-link"
+                                   title="View Code"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+
+                                    <i class="fab fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3 class="project-title">
+                            LIBRARY MANAGEMENT SYSTEM
+                        </h3>
+
+
+                        <p class="project-description">
+                            An application for managing library resources,
+                            tracking book loans, and providing a seamless
+                            experience for students and staff.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span class="tech-tag">
+                                HTML
+                            </span>
+
+                            <span class="tech-tag">
+                                CSS
+                            </span>
+
+                            <span class="tech-tag">
+                                JavaScript
+                            </span>
+
+                            <span class="tech-tag">
+                                PHP
+                            </span>
+
+                            <span class="tech-tag">
+                                MySQL
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     PROJECT 4
+                ================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/projects/fitweb.jpg"
+                             alt="Fit-Web Project">
+
+                        <div class="project-overlay">
+
+                            <div class="project-links">
+
+                                <a href="#"
+                                   class="project-link"
+                                   title="View Demo">
+
+                                    <i class="fas fa-external-link-alt"></i>
+
+                                </a>
+
+
+                                <a href="https://github.com/Arjuna001-hub/Fit-Web"
+                                   class="project-link"
+                                   title="View Code"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+
+                                    <i class="fab fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3 class="project-title">
+                            FIT-WEB
+                        </h3>
+
+
+                        <p class="project-description">
+                            A web application designed to track and calculate
+                            daily calorie intake and help users monitor their
+                            fitness-related information.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span class="tech-tag">
+                                HTML
+                            </span>
+
+                            <span class="tech-tag">
+                                CSS
+                            </span>
+
+                            <span class="tech-tag">
+                                JavaScript
+                            </span>
+
+                            <span class="tech-tag">
+                                MySQL
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     PROJECT 5
+                ================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/projects/nepal.jpg"
+                             alt="Explore Beautiful Nepal Project">
+
+                        <div class="project-overlay">
+
+                            <div class="project-links">
+
+                                <a href="#"
+                                   class="project-link"
+                                   title="View Demo">
+
+                                    <i class="fas fa-external-link-alt"></i>
+
+                                </a>
+
+
+                                <a href="https://github.com/Arjuna001-hub/Explore-Beautiful-Nepal"
+                                   class="project-link"
+                                   title="View Code"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+
+                                    <i class="fab fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3 class="project-title">
+                            EXPLORE BEAUTIFUL NEPAL
+                        </h3>
+
+
+                        <p class="project-description">
+                            A web platform dedicated to exploring tourist
+                            destinations across Nepal, helping users discover
+                            places and plan their trips.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span class="tech-tag">
+                                HTML
+                            </span>
+
+                            <span class="tech-tag">
+                                CSS
+                            </span>
+
+                            <span class="tech-tag">
+                                JavaScript
+                            </span>
+
+                            <span class="tech-tag">
+                                React
+                            </span>
+
+                            <span class="tech-tag">
+                                Node.js
+                            </span>
+
+                            <span class="tech-tag">
+                                MySQL
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- =================================
+                     PROJECT 6 |
+                ================================== -->
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/projects/portfolio.jpg"
+                             alt="Portfolio Project">
+
+                        <div class="project-overlay">
+
+                            <div class="project-links">
+                                <a href="#"
+                                   class="project-link"
+                                   title="View Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Arjuna001-hub/Portfolio.A"
+                                   class="project-link"
+                                   title="View Code"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+
+                                    <i class="fab fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3 class="project-title">
+                            PORTFOLIO
+                        </h3>
+
+
+                        <p class="project-description">
+                            A responsive portfolio website showcasing my skills, projects, experience, 
+                            and contact information.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span class="tech-tag">
+                                HTML
+                            </span>
+
+                            <span class="tech-tag">
+                                CSS
+                            </span>
+
+                            <span class="tech-tag">
+                                JavaScript
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         SKILLS SECTION
+    ========================================= -->
+
+    <section id="skills" class="skills">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Technical Skills
+            </h2>
+
+
+            <div class="skills-grid">
+
+
+                <!-- FRONTEND -->
+
+                <div class="skill-category">
+
+                    <h3 class="skill-title">
+                        Frontend
+                    </h3>
+
+
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+
+                            <span class="skill-name">
+                                JavaScript
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div class="skill-progress"
+                                     style="width: 95%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <span class="skill-name">
+                                HTML
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div class="skill-progress"
+                                     style="width: 95%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <span class="skill-name">
+                                CSS
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div class="skill-progress"
+                                     style="width: 88%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BACKEND -->
+
+                <div class="skill-category">
+
+                    <h3 class="skill-title">
+                        Backend
+                    </h3>
+
+
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+
+                            <span class="skill-name">
+                                PHP
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div class="skill-progress"
+                                     style="width: 92%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <span class="skill-name">
+                                Python
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div class="skill-progress"
+                                     style="width: 92%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DATABASE & FRAMEWORKS -->
+
+                <div class="skill-category">
+
+                    <h3 class="skill-title">
+                        Database & Frameworks
+                    </h3>
+
+
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+
+                            <span class="skill-name">
+                                MySQL
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div class="skill-progress"
+                                     style="width: 87%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <span class="skill-name">
+                                Django
+                            </span>
+
+                            <div class="skill-bar">
+
+                                <div class="skill-progress"
+                                     style="width: 87%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+         CONTACT SECTION
+    ========================================= -->
+
+    <section id="contact" class="contact">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Get In Touch
+            </h2>
+
+
+            <div class="contact-content">
+
+
+                <!-- CONTACT INFORMATION -->
+
+                <div class="contact-info">
+
+                    <h3 class="contact-subtitle">
+                        Let's Connect
+                    </h3>
+
+
+                    <p>
+                        I'm always interested in new opportunities and
+                        exciting projects.
+                        Whether you have a question or just want to say hi,
+                        feel free to reach out.
+                    </p>
+
+
+                    <div class="contact-details">
+
+
+                        <div class="contact-item">
+
+                            <i class="fas fa-envelope"></i>
+
+                            <span>
+                                as6608936@gmail.com
+                            </span>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <i class="fas fa-phone"></i>
+
+                            <span>
+                                +977-9761878570
+                            </span>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <span>
+                                Kathmandu, Nepal
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SOCIAL LINKS -->
+
+                    <div class="social-links">
+
+
+                        <a href="https://github.com/Arjuna001-hub"
+                           class="social-link"
+                           title="GitHub"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fab fa-github"></i>
+
+                        </a>
+
+
+                        <a href="https://www.facebook.com/l.rd.arjuna"
+                           class="social-link"
+                           title="Facebook"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fab fa-facebook"></i>
+
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/in/arjun-sharma-114666344/"
+                           class="social-link"
+                           title="LinkedIn"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fab fa-linkedin"></i>
+
+                        </a>
+
+                        
+                        <a href="https://www.instagram.com/arjuna._.sh/"
+                           class="social-link"
+                           title="Instagram"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i class="fab fa-instagram"></i>
+
+                        </a>
+
+
+                        <a href="mailto:as6608936@gmail.com"
+                           class="social-link"
+                           title="Email">
+
+                            <i class="fas fa-envelope"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONTACT FORM -->
+
+                <form class="contact-form"
+                      id="contactForm">
+
+
+                    <div class="form-group">
+
+                        <input type="text"
+                               name="name"
+                               placeholder="Your Name"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input type="email"
+                               name="email"
+                               id="emailInput"
+                               placeholder="Your Email"
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                               title="Please enter a valid email address (e.g., name@example.com)"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input type="text"
+                               name="subject"
+                               placeholder="Subject"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <textarea name="message"
+                                  placeholder="Your Message"
+                                  rows="5"
+                                  required></textarea>
+
+                    </div>
+
+
+                    <button type="submit"
+                            class="btn btn-primary">
+
+                        <i class="fas fa-paper-plane"></i>
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+
+                <div class="footer-text">
+
+                    <p>
+                        &copy; 2026 Arjuna Sharma.
+                        All rights reserved.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="#home"
+                       class="footer-link">
+
+                        Back to Top
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+    <!-- Back to Top -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+
+<!-- Your other scripts -->
+<script src="script.js"></script>
+
+
+<!-- Back to Top Script -->
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+    } else {
+        backToTop.classList.remove("show");
+    }
+
+});
+
+backToTop.addEventListener("click", function () {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+</script>
+</button>
+</body>
+</html>
